@@ -1,0 +1,5 @@
+../Core/Src/bme280.c:31:13:BME280_ReadCalib	48	static
+../Core/Src/bme280.c:48:16:compensate_temp	24	static
+../Core/Src/bme280.c:58:17:compensate_humidity	24	static
+../Core/Src/bme280.c:73:6:BME280_Init	16	static
+../Core/Src/bme280.c:90:12:BME280_Read	48	static
