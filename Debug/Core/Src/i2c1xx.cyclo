@@ -1,9 +1,0 @@
-../Core/Src/i2c1xx.c:23:6:I2C1_Init	1
-../Core/Src/i2c1xx.c:50:5:I2C1_Start	7
-../Core/Src/i2c1xx.c:64:6:I2C1_Stop	1
-../Core/Src/i2c1xx.c:72:5:I2C1_WriteAddress	4
-../Core/Src/i2c1xx.c:82:5:I2C1_WriteByte	7
-../Core/Src/i2c1xx.c:99:9:I2C1_ReadAck	3
-../Core/Src/i2c1xx.c:107:9:I2C1_ReadNack	3
-../Core/Src/i2c1xx.c:119:5:I2C1_WriteMulti	7
-../Core/Src/i2c1xx.c:137:5:I2C1_ReadMulti	14

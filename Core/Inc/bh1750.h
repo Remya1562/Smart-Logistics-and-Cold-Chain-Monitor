@@ -11,8 +11,8 @@
 
 #include<stdio.h>
 int BH1750_send_Command(uint8_t cmd);
-void BH1750_init(void);
-float BH1750_read(void);
+void BH1750_Init(void);
+float BH1750_Read(void);
 void delay_ms(uint32_t ms);
 
 

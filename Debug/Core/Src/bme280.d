@@ -1,5 +1,4 @@
-Core/Src/bme280.o: ../Core/Src/bme280.c ../Core/Inc/bme280.h \
- ../Core/Inc/i2c1.h \
+Core/Src/bme280.o: ../Core/Src/bme280.c \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h \
  ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h \
  ../Drivers/CMSIS/Include/core_cm4.h \
@@ -25,9 +24,8 @@ Core/Src/bme280.o: ../Core/Src/bme280.c ../Core/Inc/bme280.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h \
  ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h \
- ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
-../Core/Inc/bme280.h:
-../Core/Inc/i2c1.h:
+ ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h \
+ ../Core/Inc/i2c1.h ../Core/Inc/usart2.h ../Core/Inc/bme280.h
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h:
 ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f411xe.h:
 ../Drivers/CMSIS/Include/core_cm4.h:
@@ -54,3 +52,6 @@ Core/Src/bme280.o: ../Core/Src/bme280.c ../Core/Inc/bme280.h \
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h:
 ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h:
+../Core/Inc/i2c1.h:
+../Core/Inc/usart2.h:
+../Core/Inc/bme280.h:
