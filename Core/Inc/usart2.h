@@ -6,7 +6,7 @@
 #include<stdio.h>
 #include<stdint.h>
 
-void uart_rxtx_init(void);
+void uart2_rxtx_init(void);
 void uart2_write(int ch);
 
 

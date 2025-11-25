@@ -35,7 +35,7 @@ static void uart_set_baudrate(USART_TypeDef *USARTx, uint32_t periphclk, uint32_
 	USARTx->BRR = compute_uart_bd(periphclk,baudrate);
 }
 
-void uart_rxtx_init(void){
+void uart2_rxtx_init(void){
 	RCC->AHB1ENR |= GPIOAEN;
 	RCC->APB1ENR |= UART2EN;
 
