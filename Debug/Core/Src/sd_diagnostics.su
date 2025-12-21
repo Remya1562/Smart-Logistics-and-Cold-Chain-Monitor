@@ -1,0 +1,6 @@
+../Core/Src/sd_diagnostics.c:14:13:test_miso_idle_window	24	static
+../Core/Src/sd_diagnostics.c:42:13:test_force_release	16	static
+../Core/Src/sd_diagnostics.c:67:13:test_cmd0_edge_case	24	static
+../Core/Src/sd_diagnostics.c:105:13:test_raw_clocking	24	static
+../Core/Src/sd_diagnostics.c:127:13:test_busy_behavior	16	static
+../Core/Src/sd_diagnostics.c:155:6:run_sd_diagnostics	8	static

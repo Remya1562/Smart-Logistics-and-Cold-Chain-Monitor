@@ -1,0 +1,4 @@
+../Core/Src/sdcard.c:4:6:SD_SendIdleClocks	2
+../Core/Src/sdcard.c:11:9:SD_SendCMD0	3
+../Core/Src/sdcard.c:27:9:SD_SendCMD8	4
+../Core/Src/sdcard.c:48:9:SD_SendCMD55	3

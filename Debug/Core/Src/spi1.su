@@ -1,0 +1,6 @@
+../Core/Src/spi1.c:15:6:SPI1_Init	4	static
+../Core/Src/spi1.c:45:9:SPI1_TransmitReceive	16	static
+../Core/Src/spi1.c:55:6:CS_Enable	4	static
+../Core/Src/spi1.c:59:6:CS_Disable	4	static
+../Core/Src/spi1.c:63:6:SPI1_TransmitBuffer	24	static
+../Core/Src/spi1.c:69:6:SPI1_ReceiveBuffer	32	static
