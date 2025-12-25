@@ -11,6 +11,10 @@
 #define SR_TXE			(1U<<1)
 #define SR_RXNE			(1U<<0)
 
+void SPI_SetHighSpeed(void){
+	SPI1->CR1 &= ~(7U << 3);
+    SPI1->CR1 |=  (7U << 3);
+}
 
 void SPI1_Init(void){
 	RCC->AHB1ENR |= GPIOAEN;
@@ -71,6 +75,112 @@ void SPI1_ReceiveBuffer(uint8_t *buf, uint32_t len){
 		buf[i] = SPI1_TransmitReceive(0xFF);
 	}
 }
+
+
+
+
+
+
+
+//
+//#include "spi1.h"
+//
+//#define GPIOAEN             (1U<<0)
+//#define SPI1EN              (1U<<12)
+//#define SR_TXE              (1U<<1)
+//#define SR_BSY              (1U<<7)
+//#define SR_RXNE             (1U<<0)
+//void spi_gpio_init(void)
+//{
+//    RCC->AHB1ENR |= GPIOAEN;
+//
+//    GPIOA->MODER &= ~( (3U << (5*2)) | (3U << (6*2)) | (3U << (7*2)) );
+//    GPIOA->MODER |=  ( (2U << (5*2)) | (2U << (6*2)) | (2U << (7*2)) );
+//
+//    GPIOA->AFR[0] &= ~( (0xF << 20) | (0xF << 24) | (0xF << 28) );
+//    GPIOA->AFR[0] |= (5U << 20) | (5U << 24) | (5U << 28);
+//
+//    GPIOA->MODER &= ~(3U << (4*2));
+//    GPIOA->MODER |=  (1U << (4*2));
+//
+//    GPIOA->ODR |= (1U << 4);
+//}
+//
+//void spi1_config(void)
+//{
+//    RCC->APB2ENR |= SPI1EN;
+//    SPI1->CR1 = 0;
+//    SPI1->CR1 |= (1U<<2);
+//    SPI1->CR1 |= (7U << 3);
+//
+//    SPI1->CR1 &= ~(1U<<1);    // CPOL = 0
+//    SPI1->CR1 &= ~(1U<<0);
+//
+//    SPI1->CR1 |= (1U<<9);
+//    SPI1->CR1 |= (1U<<8);
+//
+//    SPI1->CR1 &= ~(1U<<11);
+//
+//    SPI1->CR1 |= (1U<<6);
+//}
+//
+//void spi1_transmit(uint8_t *data, uint32_t size)
+//{
+//    uint32_t i = 0;
+//    volatile uint32_t temp;
+//
+//    while(i < size)
+//    {
+//        while(!(SPI1->SR & SR_TXE)){}
+//        SPI1->DR = data[i];
+//        i++;
+//    }
+//
+//    while(!(SPI1->SR & SR_TXE)){}
+//    while( SPI1->SR & SR_BSY ){}
+//
+//    temp = SPI1->DR;
+//    temp = SPI1->SR;
+//}
+//
+//void spi1_receive(uint8_t *data, uint32_t size)
+//{
+//    while(size--)
+//    {
+//        SPI1->DR = 0xFF;
+//        while(!(SPI1->SR & SR_RXNE)){}
+//        *data++ = SPI1->DR;
+//    }
+//}
+//void cs_enable(void)
+//{
+//    GPIOA->ODR &= ~(1U<<4);
+//}
+//
+//void cs_disable(void)
+//{
+//    GPIOA->ODR |= (1U<<4);
+//}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -10,6 +10,14 @@ void SD_SendIdleClocks(void);
 uint8_t SD_SendCMD0(void);
 uint8_t SD_SendCMD8(uint8_t *r7);
 uint8_t SD_SendCMD55(void);
+uint8_t SD_SendCMD41(void);
+uint8_t SD_SendACMD41(void);
+uint8_t SD_Init(void);
+uint8_t SD_SendCMD58(uint8_t *ocr);
+uint8_t SD_SendCMD58(uint8_t *r7);
+uint8_t SD_ReadBlock(uint32_t block, uint8_t *buf);
+uint8_t SD_WriteBlock(uint8_t block, uint8_t *buf);
+
 //void SD_Init(void);
 //
 //uint8_t SD_WriteBlock(uint32_t block, const uint8_t *buf);
