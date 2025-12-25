@@ -18,9 +18,5 @@ uint8_t SD_SendCMD58(uint8_t *r7);
 uint8_t SD_ReadBlock(uint32_t block, uint8_t *buf);
 uint8_t SD_WriteBlock(uint8_t block, uint8_t *buf);
 
-//void SD_Init(void);
-//
-//uint8_t SD_WriteBlock(uint32_t block, const uint8_t *buf);
-//uint8_t SD_ReadBlock(uint32_t block, uint8_t *buf);
 
 #endif /* INC_SDCARD_H_ */
